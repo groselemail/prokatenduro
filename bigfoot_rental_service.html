@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокат бигфутов в Подмосковье - Аренда больших колес с обучением | Мотоклуб</title>
+    <meta name="description" content="Прокат бигфутов в Подмосковье ⭐ Аренда техники с большими колесами ⭐ Экстремальные маршруты ⭐ Обучение экстремальному вождению ⭐ Вся экипировка включена ⭐ Звоните: +7 495 845 20 25">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Прокат эндуро и кроссовых мотоциклов",
+        "description": "Прокат бигфутов в Подмосковье, экстремальные маршруты, обучение вождению",
+        "url": "https://prokatenduro.ru",
+        "telephone": "+74958452025",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "улица Цветочная дом 33",
+            "addressLocality": "Балашиха",
+            "addressRegion": "Московская область",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "55.740492",
+            "longitude": "38.155088"
+        },
+        "openingHours": "Mo-Su 09:00-21:00",
+        "priceRange": "6000-8000 RUB",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "342"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Что такое бигфут и чем он отличается от обычного квадроцикла?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Бигфут - это квадроцикл с увеличенными колесами (до 35 дюймов), который способен преодолевать глубокие лужи, болота, снег и самое сложное бездорожье. Благодаря большим колесам техника имеет отличную проходимость и устойчивость."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "Сколько стоит аренда бигфута?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Стоимость аренды бигфута составляет от 6000 рублей за 1 час до 8000 рублей за 2 часа. В стоимость включена вся необходимая экипировка, инструктаж и сопровождение инструктора."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Нужны ли права для управления бигфутом?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Для управления бигфутом на наших трассах водительские права не требуются, так как катание происходит на закрытой территории по лесным и полевым маршрутам."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f3f4f6" width="1200" height="600"/><path d="M0,200 Q300,100 600,200 T1200,200 L1200,600 L0,600 Z" fill="%23374151"/><path d="M0,400 Q300,300 600,400 T1200,400 L1200,600 L0,600 Z" fill="%23111827"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #fbbf24;
+            color: #fbbf24;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #fbbf24;
+            color: #111827;
+            transform: translateY(-2px);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .price-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .price-card:hover::before {
+            left: 100%;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 200px;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .breadcrumbs {
+            background: #f8fafc;
+            padding: 1rem 0;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f59e0b;
+        }
+        
+        .review-card {
+            background: linear-gradient(135deg, #fff, #fefefe);
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: relative;
+        }
+        
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        
+        .bigfoot-icon {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 4rem;
+        }
+        
+        .extreme-badge {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .floating-cta {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs">
+        <div class="container mx-auto px-4">
+            <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Главная</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Услуги</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li class="text-gray-900 font-medium">Прокат бигфутов</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-motorcycle text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Прокат эндуро</h2>
+                        <p class="text-sm text-gray-600">Бигфуты в Подмосковье</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-yellow-500 transition-colors">Преимущества</a>
+                    <a href="#bikes" class="text-gray-700 hover:text-yellow-500 transition-colors">Техника</a>
+                    <a href="#prices" class="text-gray-700 hover:text-yellow-500 transition-colors">Цены</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-yellow-500 transition-colors">Отзывы</a>
+                    <a href="#faq" class="text-gray-700 hover:text-yellow-500 transition-colors">FAQ</a>
+                    <a href="#contacts" class="text-gray-700 hover:text-yellow-500 transition-colors">Контакты</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:+74958452025" class="text-xl font-bold text-gray-900 hover:text-yellow-500 transition-colors">
+                        +7 495 845 20 25
+                    </a>
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <div class="mb-6">
+                    <span class="extreme-badge">ЭКСТРИМ</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Прокат бигфутов:<br>
+                    <span class="text-yellow-400">покори любое бездорожье на больших колесах!</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                    Экстремальные маршруты по болотам, глубоким лужам и непроходимым местам! 
+                    Почувствуй мощь техники с огромными колесами и получи максимум адреналина!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center space-x-2 min-w-[200px]">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Записаться на экстрим</span>
+                    </button>
+                    <button class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg min-w-[200px]">
+                        <i class="fas fa-gift mr-2"></i>
+                        Подарочный сертификат
+                    </button>
+                </div>
+                
+                <!-- Статистика -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="stat-number">3,500+</div>
+                        <p class="text-gray-300">Экстремальных заездов</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">6</div>
+                        <p class="text-gray-300">Моделей бигфутов</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">35"</div>
+                        <p class="text-gray-300">Максимальный размер колес</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">100%</div>
+                        <p class="text-gray-300">Адреналина</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Стрелка вниз -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Почему бигфуты - это особенный экстрим?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Техника с большими колесами открывает новые возможности для экстремального отдыха</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-circle text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Огромные колеса до 35 дюймов</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Колеса диаметром до 89 см позволяют преодолевать препятствия, недоступные обычным квадроциклам. 
+                        Проплывайте через глубокие лужи и болота!
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mountain text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Экстремальные маршруты</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Специальные трассы с болотами, глубокими лужами, песчаными карьерами и непроходимыми участками. 
+                        Испытайте настоящий экстрим!
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Максимальная безопасность</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Профессиональные инструкторы по экстремальному вождению, полная экипировка и радиосвязь. 
+                        Экстрим под контролем профессионалов.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Обучение экстремальному вождению</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Научим технике преодоления водных препятствий, болот и сложного бездорожья. 
+                        От новичка до экстремала за один день!
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Эпические фото и видео</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Профессиональная съемка ваших экстремальных заездов. Получите впечатляющие кадры 
+                        на фоне брызг и непроходимого бездорожья!
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Групповые заезды</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Организуем групповые экстремальные туры до 10 человек одновременно. 
+                        Соревнуйтесь с друзьями в преодолении сложных препятствий!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши бигфуты -->
+    <section id="bikes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Наш парк бигфутов</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Самые мощные квадроциклы с огромными колесами для покорения любого бездорожья
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center relative">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                        <div class="absolute top-4 right-4 extreme-badge">ЭКСТРИМ</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">CFMOTO X8 Bigfoot</h3>
+                        <p class="text-gray-600 mb-4">
+                            Мощный бигфут с колесами 32 дюйма и двигателем 800 см³. Идеален для преодоления 
+                            глубоких луж и болотистой местности.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">800 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">32"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">18+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">200 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 6 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 10 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center relative">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                        <div class="absolute top-4 right-4 extreme-badge">ТОП</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Polaris Bigfoot 850</h3>
+                        <p class="text-gray-600 mb-4">
+                            Премиальный бигфут с колесами 35 дюймов. Самая высокая проходимость в нашем парке. 
+                            Для настоящих экстремалов!
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">850 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">35"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">21+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">230 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 8 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 14 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded text-xs">НОВИНКА</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Can-Am Outlander 1000R</h3>
+                        <p class="text-gray-600 mb-4">
+                            Самый мощный бигфут в нашем парке. Двигатель 1000 см³ и колеса 30 дюймов 
+                            для максимального драйва.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">1000 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">30"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">18+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">272 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 7 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 12 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Arctic Cat Mudpro 700</h3>
+                        <p class="text-gray-600 mb-4">
+                            Специально созданный для грязи и болот. Уникальная подвеска и колеса 28 дюймов 
+                            для комфортного экстремального катания.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">700 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">28"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">16+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">181 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 6 500 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 11 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Yamaha Grizzly 700 Big</h3>
+                        <p class="text-gray-600 mb-4">
+                            Надежный и мощный бигфут японского качества. Отличная управляемость 
+                            и проходимость в любых условиях.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">700 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">29"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">16+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">193 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 6 500 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 11 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center">
+                        <i class="bigfoot-icon fas fa-car"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Honda TRX 680 Bigfoot</h3>
+                        <p class="text-gray-600 mb-4">
+                            Идеальный выбор для новичков в экстремальном катании. Легкое управление 
+                            и высокая безопасность.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">680 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Размер колес:</span>
+                                <span class="font-semibold">27"</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Рекомендуемый возраст:</span>
+                                <span class="font-semibold">16+ лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Максимальная нагрузка:</span>
+                                <span class="font-semibold">180 кг</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 6 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 10 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экстремальные программы -->
+    <section id="programs" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Программы экстремального катания</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">От знакомства с бигфутами до профессионального экстрим-тура</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Знакомство с бигфутами</h3>
+                        <div class="mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Для новичков</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Идеальная программа для первого знакомства с техникой больших колес. 
+                            Изучение основ, безопасное катание по простым маршрутам.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Подробный инструктаж по технике</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Обучение преодолению водных препятствий</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Катание по лесным тропам</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Индивидуальное сопровождение</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Продолжительность:</span>
+                                <span class="font-semibold text-gray-900">2 часа</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-2">
+                                <span class="text-gray-600">Стоимость:</span>
+                                <span class="font-bold text-yellow-600 text-xl">7,000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-fire text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Экстремальный тур</h3>
+                        <div class="mb-4">
+                            <span class="extreme-badge">ЭКСТРИМ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Для опытных водителей! Самые сложные маршруты с болотами, глубокими лужами 
+                            и непроходимыми участками. Максимум адреналина!
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-red-500"></i>
+                                <span class="text-gray-700">Преодоление болотистых участков</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-red-500"></i>
+                                <span class="text-gray-700">Глубокие водные преграды</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-red-500"></i>
+                                <span class="text-gray-700">Крутые подъемы и спуски</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-red-500"></i>
+                                <span class="text-gray-700">Профессиональная видеосъемка</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Продолжительность:</span>
+                                <span class="font-semibold text-gray-900">4 часа</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-2">
+                                <span class="text-gray-600">Стоимость:</span>
+                                <span class="font-bold text-yellow-600 text-xl">15,000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-users text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Групповое приключение</h3>
+                        <div class="mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Для компаний</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Организованное групповое катание до 8 человек с элементами соревнований. 
+                            Отличный вариант для дружеских посиделок и корпоративов.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                                <span class="text-gray-700">Групповые гонки и соревнования</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                                <span class="text-gray-700">Командные задания</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                                <span class="text-gray-700">Призы и награды</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                                <span class="text-gray-700">Общая фотосессия</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Продолжительность:</span>
+                                <span class="font-semibold text-gray-900">3 часа</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-2">
+                                <span class="text-gray-600">Стоимость:</span>
+                                <span class="font-bold text-yellow-600 text-xl">8,500 ₽/чел</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-crown text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">VIP Экстрим День</h3>
+                        <div class="mb-4">
+                            <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold">ПРЕМИУМ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Полный день экстремального катания с персональным инструктором, обедом 
+                            на природе и профессиональной съемкой. Максимальный комфорт и сервис.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-purple-500"></i>
+                                <span class="text-gray-700">Персональный инструктор</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-purple-500"></i>
+                                <span class="text-gray-700">Обед на природе с шашлыком</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-purple-500"></i>
+                                <span class="text-gray-700">Профессиональная фото/видеосъемка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-purple-500"></i>
+                                <span class="text-gray-700">Трансфер от/до Москвы</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Продолжительность:</span>
+                                <span class="font-semibold text-gray-900">8 часов</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-2">
+                                <span class="text-gray-600">Стоимость:</span>
+                                <span class="font-bold text-yellow-600 text-xl">25,000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section id="prices" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Стоимость проката бигфутов</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Прозрачные цены без скрытых доплат. Вся экипировка и инструктаж включены
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+                <!-- Стандарт -->
+                <div class="price-card bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-car text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">Стандарт</h3>
+                        </div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <div class="text-4xl font-bold text-gray-900 mb-2">6,000 ₽</div>
+                        <p class="text-gray-500 mb-4">1 час катания</p>
+                        
+                        <ul class="text-left space-y-2 mb-6">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Бигфут с колесами 27-30"
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Полная экипировка
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Инструктаж и сопровождение
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Фото на телефон
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-8 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Экстрим -->
+                <div class="price-card bg-white border-2 border-yellow-400 rounded-xl overflow-hidden relative">
+                    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                        ПОПУЛЯРНЫЙ
+                    </div>
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-fire text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">Экстрим</h3>
+                        </div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <div class="text-4xl font-bold text-gray-900 mb-2">8,000 ₽</div>
+                        <p class="text-gray-500 mb-4">1 час экстремального катания</p>
+                        
+                        <ul class="text-left space-y-2 mb-6">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Премиум бигфут до 35"
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Экстремальные маршруты
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Профессиональная съемка
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Радиосвязь с инструктором
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-8 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- VIP -->
+                <div class="price-card bg-white border-2 border-purple-400 rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-crown text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">VIP</h3>
+                        </div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <div class="text-4xl font-bold text-gray-900 mb-2">12,000 ₽</div>
+                        <p class="text-gray-500 mb-4">1 час VIP катания</p>
+                        
+                        <ul class="text-left space-y-2 mb-6">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Эксклюзивный бигфут
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Персональный инструктор
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Видео с дрона
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Напитки и закуски
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-8 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительные услуги -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Дополнительные услуги</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-plus text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Доп. час катания</h4>
+                        <p class="text-2xl font-bold text-blue-600">4,500 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-camera text-green-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Фотосессия</h4>
+                        <p class="text-2xl font-bold text-green-600">2,500 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-video text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Видео с дрона</h4>
+                        <p class="text-2xl font-bold text-purple-600">3,500 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-utensils text-orange-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Пикник с шашлыком</h4>
+                        <p class="text-2xl font-bold text-orange-600">1,500 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда экспертов -->
+    <section id="team" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Команда экспертов по экстриму</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Профессиональные инструкторы с многолетним опытом экстремального вождения</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Иван Беседин</h3>
+                        <p class="text-yellow-600 font-semibold mb-2">Основатель и главный инструктор</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            15+ лет опыта экстремального вождения. Мастер спорта по мотокроссу. 
+                            Специализация: бигфуты и сложное бездорожье.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>• Чемпион России по эндуро 2018</p>
+                            <p>• 5000+ часов инструктажа</p>
+                            <p>• Сертификат FIM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Александр Жегулович</h3>
+                        <p class="text-yellow-600 font-semibold mb-2">Старший инструктор экстрима</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            12+ лет профессионального вождения по бездорожью. Эксперт по преодолению 
+                            водных препятствий и болот.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>• Призер кубка России 2019-2021</p>
+                            <p>• 3500+ экстремальных заездов</p>
+                            <p>• Инструктор категории А</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Дмитрий Ушаков</h3>
+                        <p class="text-yellow-600 font-semibold mb-2">Технический эксперт</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Главный механик и эксперт по бигфутам. Знает каждую деталь техники 
+                            и оптимальные настройки для разных условий.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>• 8+ лет работы с бигфутами</p>
+                            <p>• Сертифицированный техник</p>
+                            <p>• 2000+ техобслуживаний</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Алсу Скрынченко</h3>
+                        <p class="text-yellow-600 font-semibold mb-2">Администратор и инструктор</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Координирует все экстремальные программы. Инструктор для новичков 
+                            и женских групп. Эксперт по безопасности.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>• 6+ лет в экстремальном спорте</p>
+                            <p>• 1500+ успешных обучений</p>
+                            <p>• Сертификат первой помощи</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Отзывы наших экстремалов</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Что говорят клиенты о катании на бигфутах</p>
+                <div class="flex items-center justify-center space-x-2 mt-4">
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-600 font-semibold">4.9 из 5 (342 отзыва)</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">АМ</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Алексей Михайлов</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Нереальные ощущения! Никогда не думал, что квадроцикл может проехать через такие болота. 
+                        Бигфут с 35-дюймовыми колесами - это что-то с чем-то! Инструктор Александр показал 
+                        самые экстремальные места. Адреналин зашкаливает!
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">15 ноября 2024</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">ЕК</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Елена Кузнецова</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Взяли VIP программу на день рождения мужа. Это было невероятно! Персональный инструктор, 
+                        съемка с дрона, обед на природе. А главное - эти огромные колеса, которые проезжают 
+                        везде! Муж в восторге, будем приезжать еще.
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">8 ноября 2024</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">ДВ</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Дмитрий Волков</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Катаюсь на квадроциклах уже 5 лет, но бигфуты - это совершенно другой уровень! 
+                        Проходимость просто фантастическая. Проехали через такие места, где обычный 
+                        квадр бы застрял намертво. Техника в отличном состоянии, инструкторы профи.
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">2 ноября 2024</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">СА</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Сергей Антонов</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Приезжали компанией из 6 человек на групповое приключение. Организация на высшем уровне! 
+                        Соревновались, кто быстрее проедет болото - смеялись до слез. Фотки получились 
+                        эпические, особенно когда по колено в грязи 😄
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">28 октября 2024</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">МП</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Михаил Петров</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Хотел экстрима - получил с лихвой! Бигфут Polaris с 35-дюймовыми колесами - это зверь! 
+                        Инструктор Иван показал такие места, где я даже не думал что можно проехать. 
+                        Через неделю еду снова, уже на экстремальный тур!
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">25 октября 2024</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">АС</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Анна Смирнова</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Первый раз на бигфуте, очень волновалась. Но Алсу все подробно объяснила, 
+                        подбадривала на протяжении всей поездки. Ощущения невероятные! Кто бы мог 
+                        подумать, что я смогу проехать через такое болото 💪
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">20 октября 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Часто задаваемые вопросы</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ответы на популярные вопросы о прокате бигфутов</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Что такое бигфут и чем он отличается от обычного квадроцикла?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Бигфут - это квадроцикл с увеличенными колесами (от 27 до 35 дюймов), который способен преодолевать 
+                            глубокие лужи, болота, снег и самое сложное бездорожье. Благодаря большим колесам техника имеет 
+                            отличную проходимость, устойчивость и может буквально "плыть" по воде глубиной до 1 метра.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Сколько стоит аренда бигфута?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Стоимость аренды бигфута составляет от 6000 рублей за 1 час до 8000 рублей за час экстремального катания. 
+                            В стоимость включена вся необходимая экипировка, подробный инструктаж и сопровождение опытного инструктора. 
+                            Доплаты за экипировку, обучение или фотосъемку на телефон отсутствуют.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Нужны ли права для управления бигфутом?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Для управления бигфутом на наших трассах водительские права не требуются, так как катание происходит 
+                            на закрытой территории по лесным и полевым маршрутам. Мы не выезжаем на дороги общего пользования. 
+                            Минимальный возраст для самостоятельного управления - 16 лет.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Безопасно ли катание на бигфутах?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Да, катание абсолютно безопасно при соблюдении инструкций. Мы предоставляем полную защитную экипировку: 
+                            шлем, защиту тела, перчатки, мотоботы. Каждого клиента сопровождает опытный инструктор с радиосвязью. 
+                            У нас действует страховка на 10 млн рублей и лицензия МЧС.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Что взять с собой для катания на бигфуте?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Рекомендуем взять удобную одежду, которую не жалко испачкать (спортивный костюм или джинсы), 
+                            закрытую обувь с хорошим сцеплением. Всю защитную экипировку мы предоставляем бесплатно. 
+                            Также стоит взять сменную одежду и полотенце - после болот точно понадобятся!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Можно ли кататься в дождь или плохую погоду?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Да! Более того, в дождь катание становится еще более экстремальным и интересным. Бигфуты отлично 
+                            справляются с мокрым грунтом и лужами. Мы предоставляем водонепроницаемую экипировку. 
+                            Катание отменяется только при грозе, сильном ветре или обледенении трассы.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Какая максимальная глубина воды, которую можно преодолеть?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Бигфуты с большими колесами могут преодолевать водные препятствия глубиной до 80-100 см. 
+                            Это зависит от модели и размера колес. На наших маршрутах есть специальные места для 
+                            преодоления глубоких луж под контролем инструктора.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Есть ли ограничения по весу или возрасту?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Минимальный возраст - 16 лет для самостоятельного управления. Дети 12-16 лет могут кататься 
+                            с инструктором в качестве пассажира. Максимальный вес водителя - 120 кг. Для людей с 
+                            большим весом подбираем более мощные модели бигфутов.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Как происходит обучение для новичков?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Обучение включает теоретическую часть (15 минут) и практическую на учебной площадке (15 минут). 
+                            Изучаем органы управления, особенности бигфутов, технику преодоления препятствий. 
+                            Затем выезжаем на простые участки трассы под постоянным контролем инструктора.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Можно ли приехать группой и есть ли скидки?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Да, мы принимаем группы до 10 человек одновременно. Действуют скидки: от 5 человек - 5%, 
+                            от 8 человек - 10%. Для групп организуем специальные соревновательные программы, 
+                            общую фотосессию и возможность аренды шатра для отдыха.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="w-full py-6 px-4 text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-900">Как забронировать время и нужна ли предоплата?</span>
+                        <i class="fas fa-plus faq-toggle text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-4 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Бронирование обязательно - звоните +7 495 845 20 25 или оставляйте заявку на сайте. 
+                            Предоплата составляет 50% от стоимости при бронировании более чем за 3 дня. 
+                            При бронировании менее чем за 24 часа - полная предоплата. Принимаем наличные и карты.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section class="py-16 bg-gradient-to-br from-yellow-50 to-orange-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Записаться на экстремальное катание</h2>
+                    <p class="text-xl text-gray-600">Оставьте заявку и мы свяжемся с вами в течение 15 минут</p>
+                </div>
+                
+                <form class="space-y-6 bg-white p-8 rounded-xl shadow-lg">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Ваше имя *</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Телефон *</label>
+                        <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Программа катания</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            <option>Стандарт (1 час) - 6,000 ₽</option>
+                            <option>Экстрим (1 час) - 8,000 ₽</option>
+                            <option>VIP (1 час) - 12,000 ₽</option>
+                            <option>Знакомство с бигфутами (2 часа) - 7,000 ₽</option>
+                            <option>Экстремальный тур (4 часа) - 15,000 ₽</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Количество человек</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            <option>1 человек</option>
+                            <option>2 человека</option>
+                            <option>3 человека</option>
+                            <option>4 человека</option>
+                            <option>5+ человек</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Предпочитаемая дата</label>
+                        <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Комментарий</label>
+                        <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Опыт вождения, особые пожелания..."></textarea>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" class="mt-1" id="agree">
+                        <label for="agree" class="text-sm text-gray-600">
+                            Согласен на обработку персональных данных и получение информационных сообщений
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg w-full">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и как добраться -->
+    <section id="contacts" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Контакты и как добраться</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Мы находимся в 20 км от МКАД в живописном месте Подмосковья</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Контактная информация -->
+                <div>
+                    <div class="bg-gray-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Связаться с нами</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Телефон</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+74958452025" class="text-xl font-bold text-yellow-600 hover:text-yellow-700">
+                                            +7 495 845 20 25
+                                        </a>
+                                    </p>
+                                    <p class="text-sm text-gray-500">Ежедневно с 10:00 до 20:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Адрес</h4>
+                                    <p class="text-gray-600">
+                                        Московская область, Балашиха<br>
+                                        мкр-н Купавна, улица Цветочная дом 33
+                                    </p>
+                                    <p class="text-sm text-gray-500">20 км от МКАД</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Режим работы</h4>
+                                    <p class="text-gray-600">
+                                        Ежедневно с 9:00 до 21:00<br>
+                                        Только по предварительной записи
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                                    <p class="text-gray-600"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f49d9a929bb484869b9f9580919a9081869bda8681">[email&#160;protected]</a></p>
+                                    <p class="text-sm text-gray-500">Ответим в течение часа</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Как добраться -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Как добраться</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-car text-red-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">На автомобиле</h4>
+                                <p class="text-gray-600 leading-relaxed">
+                                    По новой платной дороге М12 можно доехать от МКАД без пробок за 15 минут. 
+                                    Также можно добраться по Горьковскому или Носовихинскому шоссе.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-train text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">На электричке</h4>
+                                <p class="text-gray-600 leading-relaxed">
+                                    С Курского вокзала на электричке Горьковского направления до платформы 33 км. 
+                                    Время в пути около 50 минут. Далее 10 минут пешком.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bus text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">На общественном транспорте</h4>
+                                <p class="text-gray-600 leading-relaxed">
+                                    От станции метро Новокосино на маршрутке 487к до остановки 33-й километр. 
+                                    На такси удобно ехать от метро Выхино или Новокосино.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карта -->
+                    <div class="mt-8 bg-gray-200 rounded-xl h-64 flex items-center justify-center">
+                        <div class="text-center text-gray-500">
+                            <i class="fas fa-map text-4xl mb-2"></i>
+                            <p class="font-semibold">Интерактивная карта</p>
+                            <p class="text-sm">Московская область, Балашиха</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Плавающая кнопка записи -->
+    <div class="floating-cta">
+        <button class="btn-primary text-white px-6 py-3 rounded-full font-bold shadow-lg">
+            <i class="fas fa-phone mr-2"></i>
+            Записаться
+        </button>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-motorcycle text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Прокат эндуро</h3>
+                            <p class="text-gray-400 text-sm">Бигфуты в Подмосковье</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Экстремальное катание на бигфутах по самым сложным маршрутам Подмосковья. 
+                        Профессиональные инструкторы и максимальная безопасность.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Наши услуги</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">Прокат бигфутов</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">Экстремальные туры</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">Обучение вождению</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">Групповые программы</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">VIP катание</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition-colors">Корпоративы</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Контакты</h3>
+                    <div class="space-y-3 text-gray-400">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-yellow-500"></i>
+                            <a href="tel:+74958452025" class="hover:text-yellow-500 transition-colors">+7 495 845 20 25</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-yellow-500"></i>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3950575f5679494b5652584d5c575d4c4b56174b4c">[email&#160;protected]</a></span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
+                            <span>Московская область, Балашиха<br>ул. Цветочная, 33</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-yellow-500"></i>
+                            <span>Ежедневно 9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Прокат эндуро и кроссовых мотоциклов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Закрыть все FAQ
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Открыть текущий, если он не был активен
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+        
+        // Плавная прокрутка к секциям
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Анимация появления при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Наблюдаем за карточками
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"964b710d1ab46121","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDv1U9wkHL7tmosDlIapeb1n9Xa7FmSnrGj9iQ8gwOxKbrdwbazbBwKrusQ%2B0aUG796wAvyoVLEk%2Bfp%2F7d1W6jh56pgvpkg5WEp%2FwBoVkGCdoMUlF4nJz7SEKzpUi3ZpxYz7bAr9Z422OCzCX5heBCWmE9OEofjl3PefSsETe8GW%2B3PDugBzAy8GZvratKPLY%2BXkS7vhWD3WrAuK4aT1DhQAZlA%2BWM%2Bi%2FQW87QNkvpFbYFOvW%2FppMtm0sE1fs6AR4fdvHpg4GkEnTHi8vUa1QJyg9xGOFsmQ86ZYT7HDCqSGSa30mcaIwMBX8ZgNl7xBSuG9xwf8IFSQmz%2F1bV1Ih3hlXdmaRdlJh92yP1GotGGhPfvA1EMWQaXa5BCFXztxKOO1q6q9ytH%2BGKwYVv9C%2Bl9q%2FptluZiQL83Zbw6lpmF5obslaL4JFFTSNqypIn41Q9Gw95sVFfjJnpRKseE9%2FJRquNZ60vgiFwgzSw9oDlVBnH4hcls0gdV6M3a6XZY89pJgtHMshMTwzG4GOuk2D8Bk%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDv1U9wkHL7tmosDlIapeb1n9Xa7FmSnrGj9iQ8gwOxKbrdwbazbBwKrusQ+0aUG796wAvyoVLEk+fp/7d1W6jh56pgvpkg5WEp/wBoVkGCdoMUlF4nJz7SEKzpUi3ZpxYz7bAr9Z422OCzCX5heBCWmE9OEofjl3PefSsETe8GW+3PDugBzAy8GZvratKPLY+XkS7vhWD3WrAuK4aT1DhQAZlA+WM+i/QW87QNkvpFbYFOvW/ppMtm0sE1fs6AR4fdvHpg4GkEnTHi8vUa1QJyg9xGOFsmQ86ZYT7HDCqSGSa30mcaIwMBX8ZgNl7xBSuG9xwf8IFSQmz/1bV1Ih3hlXdmaRdlJh92yP1GotGGhPfvA1EMWQaXa5BCFXztxKOO1q6q9ytH+GKwYVv9C+l9q/ptluZiQL83Zbw6lpmF5obslaL4JFFTSNqypIn41Q9Gw95sVFfjJnpRKseE9/JRquNZ60vgiFwgzSw9oDlVBnH4hcls0gdV6M3a6XZY89pJgtHMshMTwzG4GOuk2D8Bk=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    

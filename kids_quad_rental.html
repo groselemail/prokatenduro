@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокат квадроциклов для детей в Подмосковье - Детские квадроциклы с 8 лет | Мотоклуб</title>
+    <meta name="description" content="Прокат детских квадроциклов в Подмосковье ⭐ Безопасные 4-колесные квадроциклы для детей от 8 лет ⭐ Семейные программы катания ⭐ Детская экипировка ⭐ Профессиональные инструкторы ⭐ +7 495 845 20 25">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Прокат эндуро и питбайков",
+        "description": "Прокат детских квадроциклов в Подмосковье, семейные программы катания",
+        "url": "https://prokatenduro.ru",
+        "telephone": "+74958452025",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "улица Цветочная дом 33",
+            "addressLocality": "Балашиха, мкр-н Купавна",
+            "addressRegion": "Московская область",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "55.740492",
+            "longitude": "38.155088"
+        },
+        "openingHours": "Mo-Su 09:00-21:00",
+        "priceRange": "3000-6000 RUB",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "450"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "С какого возраста можно кататься на детских квадроциклах?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Мы принимаем детей от 8 лет. Для детей 8-10 лет обязательно сопровождение родителей на трассе. Дети от 12 лет могут кататься самостоятельно под наблюдением инструктора."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "Безопасны ли квадроциклы для детей?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Детские квадроциклы намного безопаснее питбайков благодаря четырем колесам и низкому центру тяжести. Мы используем специальные детские модели с ограничителем скорости и полной защитной экипировкой."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Какая экипировка нужна ребенку?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Мы предоставляем полный комплект детской экипировки: шлем, защиту тела, наколенники, налокотники, перчатки и специальную обувь. Вся экипировка регулярно дезинфицируется."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f3f4f6" width="1200" height="600"/><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="%23e5e7eb"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .price-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .price-card:hover::before {
+            left: 100%;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 200px;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .breadcrumbs {
+            background: #f8fafc;
+            padding: 1rem 0;
+        }
+        
+        .expert-badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f59e0b;
+        }
+        
+        .review-card {
+            background: linear-gradient(135deg, #fff, #fefefe);
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: relative;
+        }
+        
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        
+        .fixed-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .fixed-cta {
+                bottom: 10px;
+                right: 10px;
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Фиксированная кнопка записи -->
+    <button class="fixed-cta btn-primary text-white font-bold">
+        <i class="fas fa-calendar-plus mr-2"></i>
+        Записать ребенка
+    </button>
+
+    <!-- Навигационные хлебные крошки -->
+    <nav class="breadcrumbs">
+        <div class="container mx-auto px-4">
+            <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Главная</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Услуги</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Детские программы</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li class="text-gray-900 font-medium">Прокат квадроциклов для детей</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-motorcycle text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Прокат эндуро и питбайков</h2>
+                        <p class="text-sm text-gray-600">Детские квадроциклы в Подмосковье</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-yellow-500 transition-colors">Программы</a>
+                    <a href="#prices" class="text-gray-700 hover:text-yellow-500 transition-colors">Цены</a>
+                    <a href="#safety" class="text-gray-700 hover:text-yellow-500 transition-colors">Безопасность</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-yellow-500 transition-colors">Отзывы</a>
+                    <a href="#faq" class="text-gray-700 hover:text-yellow-500 transition-colors">FAQ</a>
+                    <a href="#contacts" class="text-gray-700 hover:text-yellow-500 transition-colors">Контакты</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:+74958452025" class="text-xl font-bold text-gray-900 hover:text-yellow-500 transition-colors">
+                        +7 495 845 20 25
+                    </a>
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Детские квадроциклы:<br>
+                    <span class="text-yellow-400">безопасное катание для юных райдеров от 8 лет</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                    Четыре колеса = максимальная устойчивость! Специальные детские квадроциклы с ограничителем скорости, 
+                    семейные программы катания и профессиональные инструкторы для безопасного развития вашего ребенка.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center space-x-2 min-w-[200px]">
+                        <i class="fas fa-child"></i>
+                        <span>Записать ребенка</span>
+                    </button>
+                    <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 min-w-[200px]">
+                        <i class="fas fa-gift mr-2"></i>
+                        Подарить сертификат
+                    </button>
+                </div>
+                
+                <!-- Статистика -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="stat-number">800+</div>
+                        <p class="text-gray-300">Довольных детей</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">4</div>
+                        <p class="text-gray-300">Возрастные группы</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">12+</div>
+                        <p class="text-gray-300">Детских квадроциклов</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">0</div>
+                        <p class="text-gray-300">Серьезных травм</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Стрелка вниз -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Преимущества детских квадроциклов -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Почему квадроциклы идеальны для детей?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Четыре колеса дают максимальную устойчивость и безопасность для юных райдеров</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Максимальная устойчивость</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        4 колеса обеспечивают отличную устойчивость и равновесие. Ребенку не нужно держать баланс, 
+                        как на питбайке - можно сосредоточиться на управлении и получении удовольствия.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Развитие моторики и координации</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Катание на квадроцикле отлично развивает мелкую моторику, пространственное мышление, 
+                        реакцию и координацию движений у детей.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Семейное катание</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Родители могут кататься вместе с детьми на взрослых квадроциклах. 
+                        Это отличная возможность для семейного активного отдыха на природе.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Обучение с нуля бесплатно</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Наши инструкторы научат ребенка управлять квадроциклом с самых основ. 
+                        Пошаговое обучение и постоянный контроль безопасности.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Ограничитель скорости</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Все детские квадроциклы оборудованы ограничителем скорости. 
+                        Родители и инструктор могут контролировать максимальную скорость техники.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-medal text-indigo-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Повышение уверенности</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Успешное преодоление препятствий и освоение новых навыков повышает самооценку 
+                        и уверенность ребенка в своих силах.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Детские квадроциклы -->
+    <section id="bikes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Наш парк детских квадроциклов</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Специальные детские модели с автоматической коробкой передач и системами безопасности
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Kids ATV 110cc</h3>
+                        <p class="text-gray-600 mb-4">
+                            Начальная модель для детей 8-10 лет. Автоматическая коробка передач, 
+                            ограничитель скорости до 15 км/ч, низкая посадка для удобства.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">110 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Коробка передач:</span>
+                                <span class="font-semibold">Автомат</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Возраст:</span>
+                                <span class="font-semibold">8-10 лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Макс. скорость:</span>
+                                <span class="font-semibold">15 км/ч</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 3 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 5 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Youth ATV 125cc</h3>
+                        <p class="text-gray-600 mb-4">
+                            Для детей 10-12 лет с начальным опытом. Чуть больше мощности, 
+                            скорость до 25 км/ч, улучшенная подвеска.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">125 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Коробка передач:</span>
+                                <span class="font-semibold">Автомат CVT</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Возраст:</span>
+                                <span class="font-semibold">10-12 лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Макс. скорость:</span>
+                                <span class="font-semibold">25 км/ч</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 3 500 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 6 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Junior ATV 150cc</h3>
+                        <p class="text-gray-600 mb-4">
+                            Для подростков 12-14 лет. Увеличенная мощность, скорость до 35 км/ч, 
+                            спортивная подвеска и улучшенные тормоза.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">150 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Коробка передач:</span>
+                                <span class="font-semibold">Автомат CVT</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Возраст:</span>
+                                <span class="font-semibold">12-14 лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Макс. скорость:</span>
+                                <span class="font-semibold">35 км/ч</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 4 000 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 7 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Teen ATV 200cc</h3>
+                        <p class="text-gray-600 mb-4">
+                            Для подростков 14-16 лет с опытом. Почти взрослая модель, 
+                            скорость до 45 км/ч, полный привод 4x4.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex justify-between">
+                                <span>Объём двигателя:</span>
+                                <span class="font-semibold">200 см³</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Коробка передач:</span>
+                                <span class="font-semibold">Автомат CVT</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Возраст:</span>
+                                <span class="font-semibold">14-16 лет</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Макс. скорость:</span>
+                                <span class="font-semibold">45 км/ч</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-center">
+                                <p class="text-yellow-800 font-semibold">1 час — 4 500 ₽</p>
+                                <p class="text-yellow-800 font-semibold">2 часа — 8 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программы и услуги -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Детские программы катания</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Специально разработанные программы для разных возрастов и уровней подготовки</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center">
+                        <i class="fas fa-seedling text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">"Первые шаги" (8-10 лет)</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Знакомство с квадроциклом для самых маленьких. Максимальная безопасность 
+                            и постоянное сопровождение инструктора.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Теоретическая подготовка</h4>
+                                    <p class="text-gray-600">Изучение устройства квадроцикла и правил безопасности в игровой форме</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Первые поездки</h4>
+                                    <p class="text-gray-600">Катание по специальной детской трассе с инструктором</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                                <p class="text-green-800 font-semibold text-center">Длительность: 1 час | Цена: 3,000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
+                        <i class="fas fa-child text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">"Юный водитель" (10-12 лет)</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Развитие навыков управления квадроциклом. Изучение более сложных элементов 
+                            и маршрутов с препятствиями.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Техника прохождения поворотов</h4>
+                                    <p class="text-gray-600">Обучение правильному прохождению поворотов разного радиуса</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Преодоление препятствий</h4>
+                                    <p class="text-gray-600">Небольшие горки, ямки и другие естественные препятствия</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                                <p class="text-blue-800 font-semibold text-center">Длительность: 1.5 часа | Цена: 4,500 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-star text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">"Опытный райдер" (12-14 лет)</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Для подростков с базовыми навыками. Изучение продвинутых техник, 
+                            более сложные трассы и элементы.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Скоростные участки</h4>
+                                    <p class="text-gray-600">Обучение контролю скорости на прямых и в поворотах</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Групповое катание</h4>
+                                    <p class="text-gray-600">Навыки катания в группе, соблюдение дистанции и этикет</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 p-3 bg-purple-50 rounded-lg">
+                                <p class="text-purple-800 font-semibold text-center">Длительность: 2 часа | Цена: 6,000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-users text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">"Семейный заезд" (любой возраст)</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Специальная программа для семейного катания. Родители и дети катаются 
+                            вместе по живописным маршрутам.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Совместные маршруты</h4>
+                                    <p class="text-gray-600">Безопасные трассы для совместного катания всей семьи</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Фотосессия в подарок</h4>
+                                    <p class="text-gray-600">Профессиональные фото вашей семьи на квадроциклах</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 p-3 bg-orange-50 rounded-lg">
+                                <p class="text-orange-800 font-semibold text-center">Длительность: 2 часа | Цена: от 8,000 ₽/семья</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section id="prices" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Стоимость детских программ</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Все цены включают аренду квадроцикла, полную экипировку и обучение с инструктором
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                <!-- Базовая программа -->
+                <div class="price-card bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-green-500 to-teal-600 p-6 text-white text-center">
+                        <h3 class="text-2xl font-bold mb-2">"Первые шаги"</h3>
+                        <div class="text-4xl font-bold mb-2">3,000 ₽</div>
+                        <p class="text-green-100">1 час катания</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Детский квадроцикл 110cc</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Полная экипировка</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Инструктаж и обучение</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Постоянное сопровождение</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Фото в подарок</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Продвинутая программа -->
+                <div class="price-card bg-white border-2 border-yellow-400 rounded-xl overflow-hidden relative">
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
+                        ПОПУЛЯРНАЯ
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white text-center">
+                        <h3 class="text-2xl font-bold mb-2">"Юный водитель"</h3>
+                        <div class="text-4xl font-bold mb-2">4,500 ₽</div>
+                        <p class="text-blue-100">1.5 часа катания</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-blue-500 mr-3"></i>
+                                <span>Детский квадроцикл 125cc</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-blue-500 mr-3"></i>
+                                <span>Усиленная экипировка</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-blue-500 mr-3"></i>
+                                <span>Продвинутое обучение</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-blue-500 mr-3"></i>
+                                <span>Сложные элементы</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-blue-500 mr-3"></i>
+                                <span>Видеоотчет</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Семейная программа -->
+                <div class="price-card bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-orange-500 to-red-600 p-6 text-white text-center">
+                        <h3 class="text-2xl font-bold mb-2">"Семейный заезд"</h3>
+                        <div class="text-4xl font-bold mb-2">от 8,000 ₽</div>
+                        <p class="text-orange-100">2 часа для семьи</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orange-500 mr-3"></i>
+                                <span>Квадроциклы для всех</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orange-500 mr-3"></i>
+                                <span>Семейные маршруты</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orange-500 mr-3"></i>
+                                <span>Групповое обучение</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orange-500 mr-3"></i>
+                                <span>Профессиональная фотосессия</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orange-500 mr-3"></i>
+                                <span>Пикник в лесу</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительные услуги -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Дополнительные услуги</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-plus text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Доп. час катания</h4>
+                        <p class="text-2xl font-bold text-blue-600">2,000 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-camera text-green-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Профессиональное фото</h4>
+                        <p class="text-2xl font-bold text-green-600">1,500 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-video text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Видеосъемка</h4>
+                        <p class="text-2xl font-bold text-purple-600">2,500 ₽</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-birthday-cake text-yellow-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">День рождения</h4>
+                        <p class="text-2xl font-bold text-yellow-600">от 15,000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Безопасность и экипировка -->
+    <section id="safety" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Безопасность - наш приоритет</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Специальная детская экипировка и система безопасности для защиты юных райдеров</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hard-hat text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Детские шлемы</h3>
+                    <p class="text-gray-600">Сертифицированные шлемы разных размеров с улучшенной вентиляцией</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Защита тела</h3>
+                    <p class="text-gray-600">Легкие и прочные нагрудники, защищающие спину и грудную клетку</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-paper text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Защита рук и ног</h3>
+                    <p class="text-gray-600">Детские наколенники, налокотники и специальные перчатки</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shoe-prints text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Защитная обувь</h3>
+                    <p class="text-gray-600">Специальные ботинки с защитой голеностопа и нескользящей подошвой</p>
+                </div>
+            </div>
+            
+            <!-- Дополнительные меры безопасности -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Дополнительные меры безопасности</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tachometer-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Ограничители скорости</h4>
+                                <p class="text-gray-600">Все детские квадроциклы оборудованы регулируемыми ограничителями скорости</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-radio text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Радиосвязь</h4>
+                                <p class="text-gray-600">Постоянная связь между инструкторами и возможность экстренной остановки</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-first-aid text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Медицинская помощь</h4>
+                                <p class="text-gray-600">Инструкторы обучены оказанию первой помощи, есть аптечка</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-route text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Безопасные трассы</h4>
+                                <p class="text-gray-600">Специальные детские маршруты без опасных участков</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-eye text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Постоянный контроль</h4>
+                                <p class="text-gray-600">Инструктор всегда находится рядом с группой детей</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clipboard-check text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Страхование</h4>
+                                <p class="text-gray-600">Все участники застрахованы на сумму 1 миллион рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда экспертов -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Наши детские инструкторы</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Профессионалы с многолетним опытом работы с детьми</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Александр Жегулович</h3>
+                        <div class="expert-badge mb-3">Главный детский тренер</div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Опыт работы с детьми 12+ лет. Специализация - обучение детей от 6 лет. 
+                            Сертифицированный инструктор по детской безопасности.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>📍 Обучил более 2000 детей</p>
+                            <p>🏆 Детский психолог</p>
+                            <p>⭐ Сертификат детской безопасности</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Елена Морозова</h3>
+                        <div class="expert-badge mb-3">Инструктор для малышей</div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Специалист по работе с детьми 6-10 лет. Педагогическое образование, 
+                            опыт работы в детских лагерях 8 лет.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>📍 Специализация: дети 6-10 лет</p>
+                            <p>🏆 Педагогическое образование</p>
+                            <p>⭐ Курсы детской психологии</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Максим Петров</h3>
+                        <div class="expert-badge mb-3">Инструктор для подростков</div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Работа с подростками 12-16 лет. Мастер спорта по мотокроссу, 
+                            опыт соревновательной деятельности.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>📍 Мастер спорта по мотокроссу</p>
+                            <p>🏆 Опыт соревнований 15+ лет</p>
+                            <p>⭐ Тренерская категория</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Анна Козлова</h3>
+                        <div class="expert-badge mb-3">Семейный инструктор</div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Специалист по семейным программам. Помогает организовать совместное 
+                            катание родителей и детей.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <p>📍 Семейные программы</p>
+                            <p>🏆 Опыт 7+ лет</p>
+                            <p>⭐ Курсы семейной психологии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Отзывы родителей</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Что говорят мамы и папы о катании их детей на квадроциклах
+                </p>
+                <div class="flex items-center justify-center mt-4">
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">5.0 (450+ отзывов)</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">МА</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Мария Антонова</h4>
+                            <p class="text-sm text-gray-500">Мама Артема, 9 лет</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Сын катался первый раз и был в полном восторге! Инструктор очень терпеливо 
+                        объяснял все нюансы. Безопасность на высшем уровне. Теперь просит поехать еще!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">15 декабря 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">ДС</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Дмитрий Смирнов</h4>
+                            <p class="text-sm text-gray-500">Папа Софии, 12 лет</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Брали семейную программу - катались всей семьей. Дочка быстро освоилась, 
+                        а квадроциклы оказались намного безопаснее, чем мы думали. Отличный активный отдых!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">8 декабря 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">ЕК</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Елена Козлова</h4>
+                            <p class="text-sm text-gray-500">Мама Максима, 14 лет</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Сын давно просил покататься на квадроциклах. Здесь все организовано идеально - 
+                        от экипировки до обучения. Максим в восторге, уже планируем следующий визит.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">2 декабря 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">АП</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Андрей Попов</h4>
+                            <p class="text-sm text-gray-500">Папа двоих детей</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Привез двоих детей 8 и 13 лет. Для каждого подобрали подходящий квадроцикл. 
+                        Инструкторы профессионалы своего дела. Дети счастливы, а я спокоен за их безопасность.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">25 ноября 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">ОВ</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ольга Васильева</h4>
+                            <p class="text-sm text-gray-500">Мама Алисы, 10 лет</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Дочка очень стеснительная, но инструктор Елена сумела найти к ней подход. 
+                        Теперь Алиса уверенно управляет квадроциклом и не хочет останавливаться!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">18 ноября 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">ИГ</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Игорь Громов</h4>
+                            <p class="text-sm text-gray-500">Папа Никиты, 15 лет</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Сын подросток, думал не заинтересуется, но ошибся! Максим показал ему продвинутые 
+                        техники, теперь Никита серьезно увлекся мотоспортом. Спасибо за профессионализм!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">10 ноября 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Часто задаваемые вопросы</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ответы на популярные вопросы родителей о детском катании на квадроциклах
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">С какого возраста можно кататься на детских квадроциклах?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Мы принимаем детей от 8 лет. Для детей 8-10 лет обязательно сопровождение родителей на трассе. 
+                                Дети от 12 лет могут кататься самостоятельно под наблюдением инструктора. 
+                                Максимальный возраст для детских программ - 16 лет.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Безопасны ли квадроциклы для детей?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Детские квадроциклы намного безопаснее питбайков благодаря четырем колесам и низкому центру тяжести. 
+                                Мы используем специальные детские модели с ограничителем скорости, автоматической коробкой передач 
+                                и полной защитной экипировкой.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Какая экипировка нужна ребенку?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Мы предоставляем полный комплект детской экипировки: шлем, защиту тела, наколенники, 
+                                налокотники, перчатки и специальную обувь. Вся экипировка регулярно дезинфицируется. 
+                                Родителям нужно принести только удобную одежду для ребенка.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Нужен ли опыт управления квадроциклом?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Нет, опыт не нужен. Мы обучаем детей с самого начала. Программа "Первые шаги" 
+                                специально создана для новичков. Инструктор проводит подробный инструктаж и 
+                                сопровождает ребенка на протяжении всего катания.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Могут ли родители кататься вместе с детьми?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Да, у нас есть специальная программа "Семейный заезд". Родители катаются на взрослых 
+                                квадроциклах, дети - на детских. Маршруты подбираются так, чтобы было комфортно всем участникам. 
+                                Это отличная возможность для семейного активного отдыха.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Какие ограничения по весу и росту?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Минимальный рост - 120 см, максимальный вес - 70 кг. Для каждого ребенка мы подбираем 
+                                подходящий по размеру квадроцикл. У нас есть модели для разных возрастных групп 
+                                и комплекции детей.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">В любую ли погоду можно кататься?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Мы работаем в любую погоду, кроме сильного дождя, снегопада или тумана. 
+                                При небольшом дожде предоставляем дождевики. Зимой катание особенно интересное - 
+                                квадроциклы отлично проходят по снегу.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Как долго длится обучение?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Базовое обучение занимает 15-20 минут. За это время ребенок изучает органы управления, 
+                                правила безопасности и делает первые метры под контролем инструктора. 
+                                Обучение входит в стоимость любой программы.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Можно ли организовать детский день рождения?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Да, мы организуем детские дни рождения и праздники. В программу входит катание на квадроциклах, 
+                                чаепитие, фотосессия и развлекательная программа. Минимальная группа - 5 детей. 
+                                Стоимость от 15,000 рублей.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-900">Как записаться на катание?</h3>
+                            <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                        </div>
+                        <div class="faq-content mt-4">
+                            <p class="text-gray-600">
+                                Запись только предварительная. Можно позвонить по телефону +7 495 845 20 25, 
+                                написать в WhatsApp или заполнить форму на сайте. Мы работаем каждый день с 9 до 21 часа. 
+                                Рекомендуем бронировать за 2-3 дня.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Записать ребенка на катание</h2>
+                    <p class="text-xl text-gray-600">
+                        Заполните форму, и мы свяжемся с вами в течение 15 минут для уточнения деталей
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Имя родителя *</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Ваше имя">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Телефон *</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Имя ребенка *</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Имя ребенка">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Возраст ребенка *</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                                    <option value="">Выберите возраст</option>
+                                    <option value="8">8 лет</option>
+                                    <option value="9">9 лет</option>
+                                    <option value="10">10 лет</option>
+                                    <option value="11">11 лет</option>
+                                    <option value="12">12 лет</option>
+                                    <option value="13">13 лет</option>
+                                    <option value="14">14 лет</option>
+                                    <option value="15">15 лет</option>
+                                    <option value="16">16 лет</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Программа катания</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                                <option value="">Выберите программу</option>
+                                <option value="first-steps">"Первые шаги" (1 час) - 3,000 ₽</option>
+                                <option value="young-driver">"Юный водитель" (1.5 часа) - 4,500 ₽</option>
+                                <option value="experienced">"Опытный райдер" (2 часа) - 6,000 ₽</option>
+                                <option value="family">"Семейный заезд" (2 часа) - от 8,000 ₽</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Предпочитаемая дата</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Предпочитаемое время</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                                    <option value="">Выберите время</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Дополнительные пожелания</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Есть ли у ребенка опыт катания? Особые пожелания? Страхи или опасения?"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3" id="agreement">
+                            <label for="agreement" class="text-sm text-gray-600">
+                                Я даю согласие на обработку персональных данных и соглашаюсь с 
+                                <a href="#" class="text-yellow-600 hover:underline">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg w-full md:w-auto">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Отправить заявку
+                        </button>
+                    </form>
+                    
+                    <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-3"></i>
+                            <div class="text-sm text-blue-800">
+                                <p class="font-semibold mb-1">Что происходит после отправки заявки:</p>
+                                <ul class="space-y-1">
+                                    <li>1. Мы свяжемся с вами в течение 15 минут</li>
+                                    <li>2. Уточним детали и ответим на все вопросы</li>
+                                    <li>3. Забронируем удобное время</li>
+                                    <li>4. Отправим подтверждение и инструкции</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и как добраться -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Контакты и как добраться</h2>
+                <p class="text-xl text-gray-600">Мы находимся в Подмосковье, легко добраться из Москвы</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Контактная информация -->
+                <div>
+                    <div class="bg-gray-50 rounded-xl p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Свяжитесь с нами</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Телефон</p>
+                                    <a href="tel:+74958452025" class="text-xl text-yellow-600 hover:underline">+7 495 845 20 25</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fab fa-whatsapp text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">WhatsApp</p>
+                                    <a href="https://wa.me/74958452025" class="text-xl text-green-600 hover:underline">+7 495 845 20 25</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Email</p>
+                                    <a href="/cdn-cgi/l/email-protection#670e090108271715080c0613020903121508491512" class="text-xl text-blue-600 hover:underline"><span class="__cf_email__" data-cfemail="234a4d454c6353514c484257464d4756514c0d5156">[email&#160;protected]</span></a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Адрес</p>
+                                    <p class="text-gray-600">Московская область, Балашиха,<br>мкр-н Купавна, улица Цветочная дом 33</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Режим работы</p>
+                                    <p class="text-gray-600">Каждый день с 9:00 до 21:00<br>Только по предварительной записи</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ответственный за детские программы -->
+                    <div class="bg-yellow-50 rounded-xl p-6">
+                        <h4 class="text-lg font-bold text-gray-900 mb-4">Ответственный за детские программы</h4>
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">Алсу Скрынченко</p>
+                                <p class="text-gray-600">Администратор детских программ</p>
+                                <p class="text-sm text-gray-500">Опыт работы с детьми 5+ лет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Как добраться -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Как добраться</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-car text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">На автомобиле</h4>
+                                    <p class="text-gray-600 mb-2">
+                                        Доехать от Москвы можно по Горьковскому или Носовихинскому шоссе, 
+                                        а также М12. Расстояние от МКАД — 20 км, время в пути — от 15 минут 
+                                        в зависимости от пробок.
+                                    </p>
+                                    <p class="text-sm text-blue-600">📍 Бесплатная парковка на территории</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-50 rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-train text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">На электричке</h4>
+                                    <p class="text-gray-600 mb-2">
+                                        С Курского вокзала на электричке Горьковского направления до 
+                                        платформы 33 километр. Время в пути около 50 минут. 
+                                        Далее примерно 10 минут пешком до мотоклуба.
+                                    </p>
+                                    <p class="text-sm text-green-600">🚆 Встречаем на платформе по договоренности</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-bus text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">На автобусе или такси</h4>
+                                    <p class="text-gray-600 mb-2">
+                                        От станции метро Новокосино на маршрутке 487к до остановки 33-й 
+                                        километр и далее пешком. На такси ближе всего ехать от метро 
+                                        Выхино, Новокосино или Лухмановская.
+                                    </p>
+                                    <p class="text-sm text-purple-600">🚕 Стоимость такси от метро: 400-600 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карта (заглушка) -->
+                    <div class="mt-8 bg-gray-200 rounded-xl h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-map text-gray-400 text-4xl mb-4"></i>
+                            <p class="text-gray-500">Интерактивная карта</p>
+                            <button class="mt-2 bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+                                Построить маршрут
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-motorcycle text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Прокат эндуро</h3>
+                            <p class="text-sm text-gray-400">и питбайков</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Детские квадроциклы в Подмосковье. Безопасность, обучение, семейный отдых.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Детские услуги</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-yellow-400">Катание на квадроциклах</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Катание на питбайках</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Семейные программы</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Дни рождения</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Информация</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-yellow-400">О нас</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Безопасность</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i>+7 495 845 20 25</p>
+                        <p><i class="fas fa-envelope mr-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="630a0d050c2313110c080217060d0716110c4d1116">[email&#160;protected]</a></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Балашиха, Купавна</p>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Прокат эндуро и питбайков. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleFaq(element) {
+            const faqContent = element.querySelector('.faq-content');
+            const faqToggle = element.querySelector('.faq-toggle');
+            
+            // Закрыть все другие FAQ
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Переключить текущий FAQ
+            element.classList.toggle('active');
+        }
+        
+        // Плавная прокрутка к якорям
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Анимация появления элементов при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Наблюдать за карточками
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"964ba4543ce46941","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDtQije9zNwMH8SslFkxL1d%2BNtdPd1Fds7n9E8dgIYk7GpMzDdF1OZgWuPwyvW5pDwNws%2BhU%2BsSsSLdh7BrSETHXCjLwOW1Cg%2BYLmR6zbBC9wCyKA21z2OC86PK3Fl9gs5dHBPgutAJPhXO4IJ7uneqYnodIzPXr6nN5QO2O4JO3qpQ12YZnt2ApqMctEc2B%2FTg3v%2FwtzFs26h3quOLyJ%2F4abcIKn0XNInangSbgYsGgnAuxYmpOgCSNrWQY7nEaj4H%2F7d5EIzVzXGfIbiqnopzVoy2LUYDQrtDvmqPUZOGyWejKagzwKBq4e6tpLWXN%2B83xefmWqbc6bNHit2Nv4xC3MIyTr2br1VaBmtRMsTfqSplj1HG8FlZAZEYOn5LCj1lEi8npY8y94yjWzHoHS%2FeXQnjkQ46VdzzCWFDwxBvCQ2xz3IS1npLR%2FeT0tArcFGbOAt8Vt%2BS%2B0O1GkBrLqcYwJgBEmFCty1bi3JB0mrcm5CBw1ueYp9lkjq4szCGPK5A%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDtQije9zNwMH8SslFkxL1d+NtdPd1Fds7n9E8dgIYk7GpMzDdF1OZgWuPwyvW5pDwNws+hU+sSsSLdh7BrSETHXCjLwOW1Cg+YLmR6zbBC9wCyKA21z2OC86PK3Fl9gs5dHBPgutAJPhXO4IJ7uneqYnodIzPXr6nN5QO2O4JO3qpQ12YZnt2ApqMctEc2B/Tg3v/wtzFs26h3quOLyJ/4abcIKn0XNInangSbgYsGgnAuxYmpOgCSNrWQY7nEaj4H/7d5EIzVzXGfIbiqnopzVoy2LUYDQrtDvmqPUZOGyWejKagzwKBq4e6tpLWXN+83xefmWqbc6bNHit2Nv4xC3MIyTr2br1VaBmtRMsTfqSplj1HG8FlZAZEYOn5LCj1lEi8npY8y94yjWzHoHS/eXQnjkQ46VdzzCWFDwxBvCQ2xz3IS1npLR/eT0tArcFGbOAt8Vt+S+0O1GkBrLqcYwJgBEmFCty1bi3JB0mrcm5CBw1ueYp9lkjq4szCGPK5A==";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    

@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корпоратив на квадроциклах в Подмосковье - Тимбилдинг и активный отдых | Мотоклуб</title>
+    <meta name="description" content="Организация корпоративов на квадроциклах в Подмосковье ⭐ Тимбилдинг программы ⭐ Полная организация мероприятий ⭐ Кейтеринг и фотосъемка ⭐ Звоните: +7 495 845 20 25">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Прокат эндуро и кроссовых мотоциклов",
+        "description": "Корпоративные мероприятия на квадроциклах, тимбилдинг программы",
+        "url": "https://prokatenduro.ru",
+        "telephone": "+74958452025",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "улица Цветочная дом 33",
+            "addressLocality": "Балашиха, мкр-н Купавна",
+            "addressRegion": "Московская область",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "55.740492",
+            "longitude": "38.155088"
+        },
+        "openingHours": "Mo-Su 09:00-21:00",
+        "priceRange": "15000-50000 RUB",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Сколько человек может участвовать в корпоративе на квадроциклах?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Мы организуем корпоративы для групп от 6 до 50 человек. Для больших групп разрабатываем индивидуальную программу с несколькими заездами."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "Какова стоимость корпоратива на квадроциклах?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Стоимость зависит от количества участников и программы. Базовый пакет от 15,000 рублей с человека, включая катание, инструктаж и экипировку."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Предоставляете ли вы питание на корпоративе?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, у нас есть кейтеринг-услуги: от легких закусок и чая до полноценного банкета. Можем организовать барбекю на природе."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f3f4f6" width="1200" height="600"/><path d="M0,300 Q300,150 600,300 T1200,250 L1200,600 L0,600 Z" fill="%23e5e7eb"/><circle cx="200" cy="150" r="30" fill="%23fbbf24" opacity="0.7"/><circle cx="800" cy="200" r="25" fill="%23f59e0b" opacity="0.8"/><circle cx="1000" cy="100" r="20" fill="%23fbbf24" opacity="0.6"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #fbbf24;
+            color: #fbbf24;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #fbbf24;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .price-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .price-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .price-card:hover::before {
+            left: 100%;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            background: #f9fafb;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 300px;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+            color: #f59e0b;
+        }
+        
+        .breadcrumbs {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            padding: 1rem 0;
+        }
+        
+        .expert-badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .review-card {
+            background: linear-gradient(135deg, #fff, #fefefe);
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        
+        .program-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .floating-cta {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <button class="btn-primary text-white px-6 py-3 rounded-full font-bold shadow-lg">
+            <i class="fas fa-phone mr-2"></i>
+            Заказать корпоратив
+        </button>
+    </div>
+
+    <!-- Навигационные хлебные крошки -->
+    <nav class="breadcrumbs">
+        <div class="container mx-auto px-4">
+            <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Главная</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li><a href="#" class="hover:text-yellow-500 transition-colors">Услуги</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li class="text-gray-900 font-medium">Корпоратив на квадроциклах</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-motorcycle text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Прокат эндуро</h2>
+                        <p class="text-sm text-gray-600">Корпоративы на квадроциклах</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#programs" class="text-gray-700 hover:text-yellow-500 transition-colors">Программы</a>
+                    <a href="#packages" class="text-gray-700 hover:text-yellow-500 transition-colors">Пакеты</a>
+                    <a href="#prices" class="text-gray-700 hover:text-yellow-500 transition-colors">Цены</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-yellow-500 transition-colors">Отзывы</a>
+                    <a href="#contacts" class="text-gray-700 hover:text-yellow-500 transition-colors">Контакты</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:+74958452025" class="text-xl font-bold text-gray-900 hover:text-yellow-500 transition-colors">
+                        +7 495 845 20 25
+                    </a>
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                        Обратный звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto text-center text-white">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Корпоратив на квадроциклах:<br>
+                    <span class="text-yellow-400">незабываемый тимбилдинг в Подмосковье</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-4xl mx-auto">
+                    Организуем корпоративные мероприятия любого масштаба: от камерных команд до крупных компаний. 
+                    Полный сервис: техника, инструкторы, питание, развлечения и памятные фото!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center space-x-2 min-w-[250px]">
+                        <i class="fas fa-users"></i>
+                        <span>Заказать мероприятие</span>
+                    </button>
+                    <button class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg min-w-[250px]">
+                        <i class="fas fa-calculator mr-2"></i>
+                        Рассчитать стоимость
+                    </button>
+                </div>
+                
+                <!-- Статистика -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                    <div class="text-center">
+                        <div class="stat-number">200+</div>
+                        <p class="text-gray-300 font-medium">Корпоративов проведено</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">8</div>
+                        <p class="text-gray-300 font-medium">Лет опыта</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">50</div>
+                        <p class="text-gray-300 font-medium">Человек максимум</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">100%</div>
+                        <p class="text-gray-300 font-medium">Гарантия впечатлений</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Стрелка вниз -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Преимущества корпоративов -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Почему выбирают нас для корпоративов?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Мы специализируемся на организации корпоративных мероприятий и знаем, как сделать ваш тимбилдинг максимально эффективным
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Полная организация</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Берем на себя всю организацию: от встречи гостей до проводов. Вам остается только наслаждаться мероприятием вместе с командой.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Максимальная безопасность</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Профессиональные инструкторы, современная техника, полная экипировка и страховка 10 млн рублей для каждого участника.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Кейтеринг и банкет</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Организуем питание любого уровня: от фуршета до полноценного банкета. Есть варианты барбекю на природе.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Фото и видеосъемка</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Профессиональная съемка мероприятия, дрон-съемка, создание корпоративного видео. Все материалы в высоком качестве.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-trophy text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Программы тимбилдинга</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Специальные задания и соревнования, направленные на сплочение команды и развитие лидерских качеств.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-percent text-indigo-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Корпоративные скидки</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Специальные цены для корпоративных клиентов. Скидки до 20% при бронировании больших групп и повторных мероприятиях.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программы тимбилдинга -->
+    <section id="programs" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Программы тимбилдинга</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Разработанные нашими экспертами программы для укрепления командного духа и развития сотрудников
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="program-icon">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Квест-гонки</h3>
+                    <p class="text-gray-600 mb-6">
+                        Командные соревнования с поиском контрольных точек, решением задач и преодолением препятствий.
+                    </p>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-yellow-600">2-3 часа</span>
+                        <p class="text-sm text-gray-500">Длительность</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="program-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Лидер группы</h3>
+                    <p class="text-gray-600 mb-6">
+                        Ротация лидерства в командах, развитие навыков руководства и принятия решений в экстремальных ситуациях.
+                    </p>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-yellow-600">3-4 часа</span>
+                        <p class="text-sm text-gray-500">Длительность</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="program-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Командные задачи</h3>
+                    <p class="text-gray-600 mb-6">
+                        Решение задач, требующих слаженной работы всей команды: строительство препятствий, перевозка грузов.
+                    </p>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-yellow-600">2-3 часа</span>
+                        <p class="text-sm text-gray-500">Длительность</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="program-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Экстрим-тур</h3>
+                    <p class="text-gray-600 mb-6">
+                        Преодоление сложных препятствий, требующих взаимопомощи и поддержки коллег по командам.
+                    </p>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-yellow-600">4-5 часов</span>
+                        <p class="text-sm text-gray-500">Длительность</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корпоративные пакеты -->
+    <section id="packages" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Корпоративные пакеты</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Готовые решения для мероприятий любого масштаба и бюджета
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Базовый пакет -->
+                <div class="price-card bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 p-8 text-center text-white">
+                        <h3 class="text-2xl font-bold mb-2">Базовый</h3>
+                        <div class="text-4xl font-bold mb-2">15,000 ₽</div>
+                        <p class="text-blue-100">за человека</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">2 часа катания на квадроциклах</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Инструктаж и сопровождение</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Вся экипировка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Чай, кофе, печенье</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Групповое фото</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Выбрать пакет
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Стандартный пакет -->
+                <div class="price-card bg-white border-2 border-yellow-400 rounded-xl overflow-hidden relative">
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+                        ПОПУЛЯРНЫЙ
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-400 to-orange-500 p-8 text-center text-white">
+                        <h3 class="text-2xl font-bold mb-2">Стандартный</h3>
+                        <div class="text-4xl font-bold mb-2">25,000 ₽</div>
+                        <p class="text-yellow-100">за человека</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">3 часа катания + тимбилдинг</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Инструктаж и сопровождение</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Вся экипировка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Фуршет или барбекю</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Профессиональная фотосъемка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Соревнования с призами</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Выбрать пакет
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Премиум пакет -->
+                <div class="price-card bg-white border-2 border-purple-400 rounded-xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-purple-400 to-purple-600 p-8 text-center text-white">
+                        <h3 class="text-2xl font-bold mb-2">Премиум</h3>
+                        <div class="text-4xl font-bold mb-2">40,000 ₽</div>
+                        <p class="text-purple-100">за человека</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Полный день (6 часов)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Расширенная программа тимбилдинга</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Вся экипировка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Банкет с горячими блюдами</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Фото + видео + дрон-съемка</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Индивидуальные сувениры</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span class="text-gray-700">Трансфер от/до офиса</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full">
+                            Выбрать пакет
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительные услуги -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Дополнительные услуги</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bus text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Трансфер</h4>
+                        <p class="text-2xl font-bold text-blue-600">2,000 ₽</p>
+                        <p class="text-sm text-gray-500">за человека</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-camera text-green-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Доп. фотограф</h4>
+                        <p class="text-2xl font-bold text-green-600">15,000 ₽</p>
+                        <p class="text-sm text-gray-500">за мероприятие</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-video text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Видеосъемка</h4>
+                        <p class="text-2xl font-bold text-purple-600">25,000 ₽</p>
+                        <p class="text-sm text-gray-500">за мероприятие</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-gift text-red-500"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Сувениры</h4>
+                        <p class="text-2xl font-bold text-red-600">от 500 ₽</p>
+                        <p class="text-sm text-gray-500">за человека</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда экспертов -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Наша команда</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Профессиональные организаторы и инструкторы с многолетним опытом проведения корпоративных мероприятий
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="team-card">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Иван Беседин</h3>
+                        <p class="text-yellow-600 font-semibold mb-3">Основатель и руководитель</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            8 лет в индустрии активного отдыха. Организовал более 200 корпоративных мероприятий для крупных компаний.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <div class="flex items-center justify-between">
+                                <span>Опыт:</span>
+                                <span class="font-semibold">8 лет</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Сертификаты:</span>
+                                <span class="font-semibold">МЧС, FIM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Александр Жегулович</h3>
+                        <p class="text-yellow-600 font-semibold mb-3">Главный тренер</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Мастер спорта по мотокроссу. Специализируется на обучении корпоративных групп и программах тимбилдинга.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <div class="flex items-center justify-between">
+                                <span>Достижения:</span>
+                                <span class="font-semibold">МС по мотокроссу</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Опыт обучения:</span>
+                                <span class="font-semibold">10 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Алсу Скрынченко</h3>
+                        <p class="text-yellow-600 font-semibold mb-3">Менеджер мероприятий</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Event-менеджер с опытом работы в крупных агентствах. Координирует все этапы подготовки корпоративов.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <div class="flex items-center justify-between">
+                                <span>Образование:</span>
+                                <span class="font-semibold">Event-management</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Проектов:</span>
+                                <span class="font-semibold">150+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Дмитрий Ушаков</h3>
+                        <p class="text-yellow-600 font-semibold mb-3">Старший механик</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Отвечает за техническое состояние всего парка. Гарантирует 100% готовность техники к мероприятиям.
+                        </p>
+                        <div class="space-y-1 text-xs text-gray-500">
+                            <div class="flex items-center justify-between">
+                                <span>Опыт:</span>
+                                <span class="font-semibold">12 лет</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Специализация:</span>
+                                <span class="font-semibold">Квадроциклы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы проведенных мероприятий -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Наши кейсы</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Примеры успешно проведенных корпоративных мероприятий
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-building text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Сбербанк</h3>
+                        <p class="text-gray-600 mb-4">
+                            Тимбилдинг для 35 сотрудников IT-отдела. Квест-гонки, барбекю, награждение. Мероприятие длилось 6 часов.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-yellow-600 font-semibold">35 участников</span>
+                            <span class="text-gray-500">Сентябрь 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-building text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Яндекс</h3>
+                        <p class="text-gray-600 mb-4">
+                            Корпоратив для отдела маркетинга. Программа "Лидер группы" с фотосессией и банкетом на природе.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-yellow-600 font-semibold">28 участников</span>
+                            <span class="text-gray-500">Август 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-building text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">МТС</h3>
+                        <p class="text-gray-600 mb-4">
+                            Масштабное мероприятие для руководящего состава. Экстрим-тур, профессиональная съемка, VIP-сервис.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-yellow-600 font-semibold">42 участника</span>
+                            <span class="text-gray-500">Июль 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Отзывы корпоративных клиентов</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Что говорят о нас руководители и HR-менеджеры компаний
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            А.М.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Анна Миронова</h4>
+                            <p class="text-sm text-gray-600">HR-директор, Сбербанк</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Великолепная организация! Команда профессионально подошла к каждой детали. Наши сотрудники до сих пор обсуждают этот корпоратив. Особенно впечатлили программы тимбилдинга.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">15 октября 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            И.П.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Игорь Петров</h4>
+                            <p class="text-sm text-gray-600">Руководитель отдела, Яндекс</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Отличное соотношение цены и качества. Безопасность на высшем уровне, техника новая, инструкторы профессиональные. Команда заметно сплотилась после мероприятия.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">8 сентября 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            О.С.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ольга Сидорова</h4>
+                            <p class="text-sm text-gray-600">Менеджер по персоналу, МТС</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Провели корпоратив для топ-менеджмента. Всё на высшем уровне: сервис, питание, развлечения. Особенно понравилась профессиональная съемка. Рекомендуем всем!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">22 августа 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            В.К.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Виктор Козлов</h4>
+                            <p class="text-sm text-gray-600">Директор, IT-компания</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Уже второй год подряд проводим корпоратив с этой командой. Всегда новые идеи, качественный сервис. Сотрудники в восторге, многие записались на индивидуальные занятия.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">5 июля 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            Е.Д.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Елена Данилова</h4>
+                            <p class="text-sm text-gray-600">Начальник отдела, Росбанк</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Идеально продуманное мероприятие! От встречи до проводов всё было на высоте. Трансфер, питание, развлечения, фото - всё включено в стоимость. Никаких доплат!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">18 июня 2024</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            А.Б.
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Андрей Белов</h4>
+                            <p class="text-sm text-gray-600">Управляющий, сеть магазинов</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Отличная альтернатива банальным корпоративам в ресторанах. Активный отдых, свежий воздух, командный дух. Будем обращаться еще! Спасибо за организацию!
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">12 мая 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Часто задаваемые вопросы</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ответы на популярные вопросы о проведении корпоративных мероприятий
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Сколько человек может участвовать в корпоративе на квадроциклах?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Мы организуем корпоративы для групп от 6 до 50 человек. Для больших групп разрабатываем индивидуальную программу с несколькими заездами. Минимальный возраст участника - 12 лет.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Какова стоимость корпоратива на квадроциклах?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Стоимость зависит от количества участников и выбранной программы. Базовый пакет от 15,000 рублей с человека, включая 2 часа катания, инструктаж, экипировку и легкое питание. Действуют корпоративные скидки от 10%.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Предоставляете ли вы питание на корпоративе?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Да, у нас есть кейтеринг-услуги: от легких закусок и чая до полноценного банкета. Можем организовать барбекю на природе, горячие блюда, напитки. Меню согласовывается заранее с учетом ваших предпочтений.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Безопасно ли катание на квадроциклах для сотрудников?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Да, безопасность - наш приоритет. Все участники проходят обязательный инструктаж, получают полную экипировку. Каждый участник застрахован на 10 млн рублей. Профессиональные инструкторы сопровождают группы на протяжении всего мероприятия.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Какие документы нужны для участия в корпоративе?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Для участия достаточно паспорта. Водительские права не требуются, так как катание проходит по закрытой территории. Мы заранее получаем список участников и готовим все необходимые документы для страхования.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Можно ли провести корпоратив зимой?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Конечно! Мы работаем круглый год. Зимние корпоративы имеют особую атмосферу. Квадроциклы оснащены подогревом руля, зимней резиной. Предоставляем теплую экипировку и горячее питание.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Включена ли фото и видеосъемка в стоимость?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Групповое фото включено во все пакеты. Профессиональная фотосъемка мероприятия входит в стандартный и премиум пакеты. Видеосъемка и дрон-съемка доступны как дополнительная услуга.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">За сколько дней нужно бронировать корпоратив?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Рекомендуем бронировать за 2-3 недели, особенно на выходные дни и праздники. Для срочных мероприятий можем организовать корпоратив за 3-5 дней, но количество вариантов будет ограничено.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Есть ли скидки для постоянных корпоративных клиентов?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Да, действует система лояльности для корпоративных клиентов. При повторном обращении скидка 10%, при третьем - 15%. Для крупных компаний (от 30 человек) предоставляем дополнительные скидки и бонусы.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Что если погода будет плохой?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Мы катаемся в любую погоду! Дождь и снег только добавляют адреналина. У нас есть водонепроницаемая экипировка. В случае экстремальных погодных условий (сильная гроза), мероприятие переносится без штрафов.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Можно ли организовать индивидуальную программу?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Конечно! Мы разрабатываем индивидуальные программы с учетом специфики вашей компании, целей мероприятия и пожеланий участников. Можем включить элементы обучения, командообразующие игры, спортивные соревнования.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Предоставляете ли трансфер до места проведения?</h3>
+                        <div class="faq-toggle text-2xl text-gray-500 transition-transform duration-300">+</div>
+                    </div>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-600">
+                            Да, трансфер включен в премиум пакет или доступен как дополнительная услуга (2000 рублей с человека). Используем комфортабельные автобусы. Также можем организовать встречу на ближайшей ж/д станции.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Заказать корпоративное мероприятие</h2>
+                    <p class="text-xl text-gray-600">
+                        Оставьте заявку, и мы свяжемся с вами в течение 15 минут для обсуждения деталей
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Ваше имя *</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Введите ваше имя">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Телефон *</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Компания</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Название компании">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Количество участников *</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                                    <option>6-10 человек</option>
+                                    <option>11-20 человек</option>
+                                    <option>21-30 человек</option>
+                                    <option>31-40 человек</option>
+                                    <option>41-50 человек</option>
+                                    <option>Более 50 человек</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Предпочтительная дата</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Выберите пакет</label>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="package" value="basic" class="mr-3">
+                                    <div>
+                                        <div class="font-semibold">Базовый</div>
+                                        <div class="text-sm text-gray-600">15,000 ₽/чел</div>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-4 border border-yellow-400 bg-yellow-50 rounded-lg cursor-pointer hover:bg-yellow-100">
+                                    <input type="radio" name="package" value="standard" class="mr-3" checked>
+                                    <div>
+                                        <div class="font-semibold">Стандартный</div>
+                                        <div class="text-sm text-gray-600">25,000 ₽/чел</div>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="package" value="premium" class="mr-3">
+                                    <div>
+                                        <div class="font-semibold">Премиум</div>
+                                        <div class="text-sm text-gray-600">40,000 ₽/чел</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Дополнительные пожелания</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Расскажите о специфике мероприятия, особых требованиях или пожеланиях..."></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="agreement" class="mr-3">
+                            <label for="agreement" class="text-sm text-gray-600">
+                                Я согласен на обработку персональных данных и получение информационных сообщений
+                            </label>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary text-white px-12 py-4 rounded-lg font-bold text-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Отправить заявку
+                            </button>
+                            <p class="text-sm text-gray-500 mt-4">
+                                Мы перезвоним в течение 15 минут и рассчитаем точную стоимость
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и карта -->
+    <section id="contacts" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Контакты и как добраться</h2>
+                <p class="text-xl text-gray-600">
+                    Мы находимся всего в 20 км от МКАД по удобной трассе М12
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Контактная информация -->
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Основная площадка</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Адрес</h4>
+                                    <p class="text-gray-600">Московская область, Балашиха, мкр-н Купавна<br>улица Цветочная дом 33</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Телефон</h4>
+                                    <a href="tel:+74958452025" class="text-green-600 font-semibold text-lg hover:text-green-700">+7 495 845 20 25</a>
+                                    <p class="text-sm text-gray-500">Работаем каждый день с 9 до 21 часа</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Режим работы</h4>
+                                    <p class="text-gray-600">Ежедневно с 9:00 до 21:00<br>Только по предварительной записи</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <h4 class="font-semibold text-gray-900 mb-4">Менеджер корпоративных мероприятий</h4>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                                    А.С.
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Алсу Скрынченко</p>
+                                    <p class="text-sm text-gray-600">Консультации с 10 до 20 часов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Как добраться -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Как добраться</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-car text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">На автомобиле</h4>
+                                    <p class="text-gray-600">По новой платной дороге М12 можно доехать от МКАД без пробок за 15 минут. Также по Горьковскому или Носовихинскому шоссе.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-train text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">На электричке</h4>
+                                    <p class="text-gray-600">С Курского вокзала на электричке Горьковского направления до платформы 33 километр. Далее 10 минут пешком.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-bus text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">На общественном транспорте</h4>
+                                    <p class="text-gray-600">От метро Новокосино маршруткой 487к до остановки "33-й километр". На такси от Выхино, Новокосино или Лухмановская.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карта -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-6xl text-gray-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Интерактивная карта</p>
+                            <p class="text-sm text-gray-500">Московская область, Балашиха</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">GPS координаты</h4>
+                                <p class="text-sm text-gray-600">55.740492, 38.155088</p>
+                            </div>
+                            <button class="btn-primary text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                                <i class="fas fa-route mr-2"></i>
+                                Построить маршрут
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-motorcycle text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Прокат эндуро</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Корпоративные мероприятия на квадроциклах в Подмосковье. Полная организация от А до Я.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-vk text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                            <i class="fab fa-telegram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Прокат квадроциклов</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Корпоративы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Тимбилдинг программы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Обучение вождению</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Подарочные сертификаты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Информация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">О компании</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Наша команда</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Отзывы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Лицензии</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Безопасность</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-3">
+                        <a href="tel:+74958452025" class="flex items-center text-yellow-400 hover:text-yellow-300 transition-colors">
+                            <i class="fas fa-phone mr-3"></i>
+                            +7 495 845 20 25
+                        </a>
+                        <div class="flex items-start text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>МО, Балашиха, мкр-н Купавна<br>ул. Цветочная, 33</span>
+                        </div>
+                        <div class="flex items-center text-gray-400">
+                            <i class="fas fa-clock mr-3"></i>
+                            <span>Ежедневно 9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Прокат эндуро и кроссовых мотоциклов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+        }
+        
+        // Плавная прокрутка к якорям
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Анимация статистики при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"964b45fc2b4b2fae","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDkYjvWpfyWUl39drIrXL611ZxcOAcQ92L1YR8fl%2BgIouNkx%2F3PFkV3iwXOGEwDoShNwRDsAjLWgrvv9n1PCEnk6osb5vwZJKIy80fnZUnd%2Bc2K09drcPkqRs766neFI%2B4S3r4Qs6pqfxya%2F0J%2BNqgbdXFjKkHd059vzrbN6rvEPm7pd%2BtwTB96vZHvgeeWuzN1TOFR4XhBiNPpAHgRmzV%2FVgRQPQmwvcuSdGZKJLiNUlcngHd%2FSyk%2Fx%2BKm4Obnk%2BmWhtE8t4oV9X7hQiwJ5cPbThnjfhNOncbXqvfQLTFj4XiqArynX8c1u4x90CSUd7KCv3CvoF7hkiP%2BV3guZU1KuhKJ72ItIv6He%2BHpOsYf5zQrtfXLMtzFwgoeMJq2oPGlvP79Nuqc1sh1ZsPfPTLwCbbgV0sCQH0ExyBWtqUI6XbMIbSQLFsPqFazyvzrrgM%2F%2BIytur6%2FDdYfWdKfsKN%2Fe7AxyWo78z%2Bq5MAyNfxljrCue8sAv2gj0pW3iysUDRyQ%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDkYjvWpfyWUl39drIrXL611ZxcOAcQ92L1YR8fl+gIouNkx/3PFkV3iwXOGEwDoShNwRDsAjLWgrvv9n1PCEnk6osb5vwZJKIy80fnZUnd+c2K09drcPkqRs766neFI+4S3r4Qs6pqfxya/0J+NqgbdXFjKkHd059vzrbN6rvEPm7pd+twTB96vZHvgeeWuzN1TOFR4XhBiNPpAHgRmzV/VgRQPQmwvcuSdGZKJLiNUlcngHd/Syk/x+Km4Obnk+mWhtE8t4oV9X7hQiwJ5cPbThnjfhNOncbXqvfQLTFj4XiqArynX8c1u4x90CSUd7KCv3CvoF7hkiP+V3guZU1KuhKJ72ItIv6He+HpOsYf5zQrtfXLMtzFwgoeMJq2oPGlvP79Nuqc1sh1ZsPfPTLwCbbgV0sCQH0ExyBWtqUI6XbMIbSQLFsPqFazyvzrrgM/+Iytur6/DdYfWdKfsKN/e7AxyWo78z+q5MAyNfxljrCue8sAv2gj0pW3iysUDRyQ==";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
